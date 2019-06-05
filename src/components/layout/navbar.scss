@@ -1,0 +1,33 @@
+#app-footer-nav {
+    height: 4rem;
+    max-height: 4rem;
+    box-shadow: 0 2px 3px var(--text-color);
+
+    .nav-item {
+        transition: font-size .2s;
+        transition-delay: 0.1s;
+        font-size: 0.75rem;
+        .nav-title {
+            color: var(--link-color);
+        }
+        svg {
+            path {
+                fill: var(--link-color);
+            }
+        }
+
+        & .active {
+            transition: font-size .2s;
+            transition-delay: 0.1s;
+            font-size: 0.875rem;
+            .nav-title {
+                color: var(--link-active-color);
+            }
+            svg {
+                path {
+                    fill: var(--link-active-color);
+                }
+            }
+        }
+    }
+}

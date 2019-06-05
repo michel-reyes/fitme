@@ -1,0 +1,17 @@
+#day-item {
+    border-bottom: 1px solid var(--border-color);
+    height: 4rem;
+    min-height: 4rem;
+
+    .day-title {
+        small {
+            color: var(--text-secondary-color);
+        }
+
+        h1 {
+            color: var(--text-color);
+            font-size: 1.05rem;
+            font-weight: 400;
+        }
+    }
+}

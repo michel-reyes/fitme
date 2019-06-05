@@ -1,0 +1,94 @@
+#exercise-video-player {
+    border-radius: .25rem;
+}
+#exercise-modal {
+    .modal-dialog {
+        top: 100%;
+        transform: translateY(-110%);
+    }
+}
+
+.modal-backdrop {
+    background-color: white;
+}
+
+.workout-nav {
+    padding: 0 .5rem;
+    height: 4rem;
+    max-height: 4rem;
+
+    // no margin on p - figure - image
+    p { margin: 0; }
+    h1 { margin: 0; }
+
+    .subtitle {
+        color: var(--text-secondary-color);
+    }
+    .title {
+        color: var(--text-color);
+        font-size: 1.25rem;
+    }
+}
+
+.workout-group {
+    padding: 1rem 0;
+    padding-bottom: 7rem;
+
+    .btn-mark-completed {
+        left: 50%;
+        transform: translateX(-50%); 
+        margin-bottom: 5rem;
+        span {
+            color: white;
+            font-size: .95rem;
+        }
+
+        &.disabled {
+            background-color: var(--text-muted-color);
+            border-color: var(--text-muted-color);
+            cursor: none;
+        }
+    }
+
+    // no margin on p - figure - image
+    p { margin: 0; }
+    figure { margin: 0; }
+
+    .workout-group-item {
+        border-color: transparent;
+        padding: 0;
+        margin-bottom: 0.2rem;
+        min-height: 5rem;
+        padding: 0 .5rem;
+        text-decoration: none;
+
+        .workout-item-content {
+            .workout-item-images {
+                .workout-image {
+                    img {
+                        width: 5rem;
+                        height: 5rem;
+                        margin: 0;
+                    }
+                }
+            }
+
+            .workout-description {
+                margin-left: 1rem;
+                border-bottom: 1px solid var(--border-color);
+
+                .workout-title {
+                    color: var(--text-color);    
+                }
+
+                .workout-sets {
+                    color: var(--text-secondary-color);
+                    li + li {
+                        margin-top: -0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
