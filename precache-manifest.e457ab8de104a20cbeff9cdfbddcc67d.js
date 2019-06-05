@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "af4fcc65fc6e0f5be5acd9f348fc6efe",
+    "revision": "19762fac4e9327d487dddd087a2df074",
     "url": "/fitme/index.html"
   },
   {
-    "revision": "5f5f28c6dd5dd801eb12",
+    "revision": "58d6118c0af904806291",
     "url": "/fitme/static/css/main.4bd6fc45.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fitme/static/js/2.50d2f1a1.chunk.js"
   },
   {
-    "revision": "5f5f28c6dd5dd801eb12",
-    "url": "/fitme/static/js/main.86a5010c.chunk.js"
+    "revision": "58d6118c0af904806291",
+    "url": "/fitme/static/js/main.d4afe291.chunk.js"
   },
   {
     "revision": "69a926689573685909f1",
