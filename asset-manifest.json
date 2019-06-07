@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/fitme/static/css/main.4bd6fc45.chunk.css",
-    "main.js": "/fitme/static/js/main.412ab181.chunk.js",
-    "main.js.map": "/fitme/static/js/main.412ab181.chunk.js.map",
+    "main.js": "/fitme/static/js/main.b71641b1.chunk.js",
+    "main.js.map": "/fitme/static/js/main.b71641b1.chunk.js.map",
     "runtime~main.js": "/fitme/static/js/runtime~main.8fda4134.js",
     "runtime~main.js.map": "/fitme/static/js/runtime~main.8fda4134.js.map",
     "static/js/2.50d2f1a1.chunk.js": "/fitme/static/js/2.50d2f1a1.chunk.js",
     "static/js/2.50d2f1a1.chunk.js.map": "/fitme/static/js/2.50d2f1a1.chunk.js.map",
     "index.html": "/fitme/index.html",
-    "precache-manifest.20ef914859fbfe5e7f12e49e88eaa0c9.js": "/fitme/precache-manifest.20ef914859fbfe5e7f12e49e88eaa0c9.js",
+    "precache-manifest.3be51e37e42e6c397a7397e792e2d51d.js": "/fitme/precache-manifest.3be51e37e42e6c397a7397e792e2d51d.js",
     "service-worker.js": "/fitme/service-worker.js",
     "static/css/main.4bd6fc45.chunk.css.map": "/fitme/static/css/main.4bd6fc45.chunk.css.map"
   }
