@@ -56,7 +56,7 @@ class ExerciseList extends Component {
                     (
                         exe.exercise.map((e, i) => {
                             console.log(e)
-                            const imageA = `../images/${e.images[0]}`;
+                            const imageA = `${process.env.PUBLIC_URL}/images/${e.images[0]}`;
                             const imageB = `../../images/${e.images[1]}`;
                             return (
                                 <div
