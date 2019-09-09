@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import alasql from 'alasql';
 import { DAY_TABLE } from '../../database/day';
-import WorkoutDayList from './WorkoutDayList';
+import WorkoutDayList from './DayList';
 
 class WorkoutDay extends Component {
     state = {}

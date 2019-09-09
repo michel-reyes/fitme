@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './workoutDay.scss';
+import './Day.scss';
 
 const cleanTitle = (text) => {
     return text.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>{}[\]\\/]/gi, '');

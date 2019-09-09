@@ -4,40 +4,7 @@ import ReactJWPlayer from 'react-jw-player';
 
 class ExerciseList extends Component {
     state = {
-        video: '',
-        players: {
-            '16': {
-              id: '8EjS1km7',
-              padding: '56.25%'
-            },
-            '4': {
-              id: '7J2hxr9K',
-              padding: '75%'
-            },
-            '16loop': {
-              id: 'Zq6jSGRj',
-              padding: '56.25%'
-            },
-            '4loop': {
-              id: 'R4xwKxIJ',
-              padding: '75%'
-            },
-          },
-          player: '16',
-      wrapper: {
-        position: 'relative',
-        overflow: 'hidden'
-      },
-      iframe: {
-        width: '100%',
-        height: '100%',
-        frameBorder: '0',
-        scrolling: 'auto',
-        style: {
-          position: 'absolute',
-        },
-        allowFullScreen: true,
-      },
+        video: ''
     }
 
     loadVideo(video) {
@@ -55,7 +22,6 @@ class ExerciseList extends Component {
                     exe && exe.exercise && exe.exercise.length > 0 ? 
                     (
                         exe.exercise.map((e, i) => {
-                            console.log(e)
                             const imageA = `${process.env.PUBLIC_URL}/images/${e.images[0]}`;
                             const imageB = `${process.env.PUBLIC_URL}/images/${e.images[1]}`;
                             return (
@@ -110,13 +76,15 @@ class ExerciseList extends Component {
                     ) :
                     (
                         <span className="fixed-bottom btn-mark-completed d-flex px-3 py-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#80868b" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="#80868b" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/>
+                            </svg>
                             <span className="ml-2 text-secondary">Day completed</span>
                         </span>
                     )
                 }
     
-               
+                {/* modal video */}
                 <div className="modal fade" id="exercise-modal" tabIndex="-1" role="dialog" aria-labelledby="exercise-modalLabel" aria-hidden="true">
                     <div className="modal-dialog" role="document">
                         <div className="modal-content">
@@ -132,16 +100,25 @@ class ExerciseList extends Component {
                                 controls: false,
                             }}
                         />
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-
-                            {/* <div className="modal-body" style={{
-                                paddingBottom: this.state.players[this.state.player]['padding'],
-                                ...this.state.wrapper,
-                                }}> */}
-                            {/* <iframe title="a"
-                                { ...this.state.iframe }
-                                src={ `${this.state.video}-${this.state.players[this.state.player]['id']}.html` }
-                                /> */}
+                {/* info modal */}
+                <div className="modal fade" id="info-modal" tabIndex="-1" role="dialog" aria-labelledby="info-modalLabel" aria-hidden="true">
+                    <div className="modal-dialog modal-dialog-scrollable" role="document">
+                        <div className="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Tips</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div className="modal-body rounded">
+                                {
+                                    exe.exercisesDetails.map(d => <p className="mb-3">{d}</p>)
+                                }
                             </div>
                         </div>
                     </div>

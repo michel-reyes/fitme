@@ -4,7 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Dashboard from './components/Dashboard/Dashboard';
 import Workout from './components/Workouts/Workout';
-import WorkoutDays from './components/WorkoutDays/WorkoutDays';
+import WorkoutDays from './components/Days/Day';
 
 function App() {
   return (
